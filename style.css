@@ -14,7 +14,7 @@ html {
 body {
   font-family: 'Press Start 2P', sans-serif;
   color: #eee;
-  background-color: #222;
+  background-color: #555;
   /* background-color: #60b347; */
 }
 
@@ -32,6 +32,8 @@ main {
   align-items: center;
   justify-content: space-around;
 }
+
+
 
 .left {
   width: 52rem;
@@ -78,8 +80,21 @@ h1 {
 
 .again {
   position: absolute;
-  top: 2rem;
+  top: 8rem;
   left: 2rem;
+}
+
+.en{
+  left: 1rem;
+}
+
+.en, .tr{
+  position: absolute;
+  top: 1rem;
+}
+
+.tr{
+  left: 12rem;
 }
 
 .guess {
@@ -116,4 +131,30 @@ h1 {
 
 .label-score {
   margin-bottom: 2rem;
+}
+
+
+@media screen and (max-width: 700px) {
+  
+  main{
+    margin-top: 10rem;
+    flex-direction: column;
+  }
+
+  html{
+    font-size: 50%;
+  }
+
+  .btn{
+    padding: 1rem 2rem;
+  }
+
+  .again{
+    top: 6.5rem;
+  }
+
+  .tr{
+    left: 11rem;
+  }
+
 }
